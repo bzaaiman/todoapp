@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todoapp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    Ben from Applications Layout Template <br>
+    <% flash.each do |name, msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    End of flash <br>
+    Call of yield
+    <%= yield %>
+  </body>
+</html>
