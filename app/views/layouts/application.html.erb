@@ -9,12 +9,14 @@
   </head>
 
   <body>
-    Ben from Applications Layout Template <br>
+    From Applications Layout Template<br>
+    Flash Start Portion<br>
     <% flash.each do |name, msg| %>
       <li><%= msg %></li>
     <% end %>
-    End of flash <br>
-    Call of yield
+    End of flash<br>
+    Call of yield<br>
     <%= yield %>
+    End of yield<br>
   </body>
 </html>
